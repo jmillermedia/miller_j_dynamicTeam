@@ -12,3 +12,60 @@
     font-style: normal;
 }
 
+body {
+	background-color: rgb(142, 170, 170);
+
+}
+
+.wrapper {
+	color: #f2f2f2;
+	font-size: 16px;
+	font-family: product_sans, Arial, Helvetica, sans-serif;
+}
+
+#mainTitle {
+	font-size: 2.5em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+#memberSection {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 5em;
+}
+
+.memberPortrait {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.memberPortrait img {
+	border: thin solid black;
+	border-radius: 0.5em;
+}
+
+.memberPortrait img:hover {
+	-webkit-box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
+}
+
+.teamSelect {
+	font-size: 1em;
+	font-family: product_sans, Arial, Helvetica, sans-serif;
+	margin-top: 2em;
+	width: 12em;
+	height: 3em;
+}
+
+#bioLB {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.753);
+}
