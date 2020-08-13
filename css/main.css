@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'product_sans';
     src: url('../fonts/productsans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/productsans-regular-webfont.woff') format('woff');
+		url('../fonts/productsans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,9 +24,12 @@ body {
 }
 
 #mainTitle {
+	background-color: #f2f2f2;
+	color: rgb(142, 170, 170);
 	font-size: 2.5em;
+	text-transform: uppercase;
 	text-align: center;
-	margin-top: 2em;
+	padding: 1em 0 1em 0;
 }
 
 #memberSection {
@@ -35,7 +38,6 @@ body {
 	flex-direction: row;
 	justify-content: space-around;
 	margin: 0 auto;
-	margin-top: 5em;
 }
 
 .memberPortrait {
@@ -47,18 +49,28 @@ body {
 .memberPortrait img {
 	border: thin solid black;
 	border-radius: 0.5em;
+	filter: grayscale(100%);
 }
 
-.memberPortrait img:hover {
-	-webkit-box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 27px -7px rgba(0,0,0,0.75);
+.teamMember {
+	font-size: 2em;
+	padding: 0.5em 0 0.5em 0;
+}
+
+.teamSelect:hover {
+	-webkit-box-shadow: 10px 10px 6px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 6px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 6px -6px rgba(0,0,0,0.75);
 }
 
 .teamSelect {
+	background-color: rgb(105, 204, 204);
+	color: #f2f2f2;
+	border: none;
+	border-radius: 0.5em;
 	font-size: 1em;
 	font-family: product_sans, Arial, Helvetica, sans-serif;
-	margin-top: 2em;
+	margin-top: 1em;
 	width: 12em;
 	height: 3em;
 }
@@ -67,5 +79,45 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.753);
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.822);
+}
+
+#memberInfo {
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	padding-top: 2em;
+}
+
+#memberInfo img {
+	width: 300px;
+	height: 300px;
+	border-radius: 0.5em;
+	border: thin #f2f2f2 solid;
+}
+
+#memberName {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+#memberBio {
+	line-height: 1.25em;
+	margin-top: 1.5em;
+}
+
+#close {
+	color: white;
+	font-size: 2em;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
 }
