@@ -23,6 +23,4 @@ designer is responsible for the HTML and CSS for the project.
 4. Create a dev branch for each member; BOTH need to add bio information to the array.
 5. Merge everything to the master branch and submit a link to the dropbox on FOL - a
 .txt file is fine.
-Submission
-Homework must be submitted by midnigh
  
